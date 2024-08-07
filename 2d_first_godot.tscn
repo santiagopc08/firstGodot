@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3v78jvu7pcx"]
+
+[ext_resource type="Script" path="res://first_godot_script.gd" id="1_k44fv"]
+[ext_resource type="Texture2D" uid="uid://b4pksu0pfjiu4" path="res://pixil-frame-0.png" id="2_erybi"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_k44fv")
+
+[node name="AcceptDialog" type="AcceptDialog" parent="."]
+initial_position = 1
+size = Vector2i(300, 200)
+visible = true
+
+[node name="Pixil-frame-0" type="Sprite2D" parent="."]
+position = Vector2(345, 387)
+scale = Vector2(0.4695, 0.46675)
+texture = ExtResource("2_erybi")
